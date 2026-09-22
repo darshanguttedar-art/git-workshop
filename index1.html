@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Moss & Ember Café — specialty coffee, warm plates, and a table waiting for you.">
+  <title>Moss &amp; Ember Café | Coffee, food &amp; slow moments</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Moss and Ember Cafe home"><span class="brand-mark">✳</span> moss &amp; ember</a>
+    <nav aria-label="Main navigation">
+      <a href="#menu">Menu</a>
+      <a href="#story">Our story</a>
+      <a href="#reserve">Reserve</a>
+    </nav>
+    <a class="nav-button" href="#reserve">Book a table <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="eyebrow"><span class="status-dot"></span> Open daily · 8am — 10pm</p>
+        <h1 id="hero-title">Good coffee.<br><em>Better company.</em></h1>
+        <p class="hero-text">A neighbourhood café for slow mornings, shared plates, and conversations that run a little longer than planned.</p>
+        <a class="hero-link" href="#menu">Explore the menu <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-photo">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="Fresh coffee being poured into a cup" fetchpriority="high">
+        <div class="photo-note"><span>01</span><span>made fresh<br>every day</span></div>
+      </div>
+    </section>
+
+    <section class="welcome" id="story" aria-labelledby="welcome-title">
+      <div class="section-label">01 / Welcome in</div>
+      <div class="welcome-copy">
+        <h2 id="welcome-title">A little warmth<br>in the middle<br>of your day.</h2>
+        <div>
+          <p class="large-copy">We built Moss &amp; Ember around the simple belief that a good space can change the shape of your day.</p>
+          <p>Come in for a carefully brewed cup, stay for a toasted sandwich, and leave feeling like you found a new favourite corner of the city.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu" aria-labelledby="menu-title">
+      <div class="section-heading">
+        <div class="section-label">02 / From the kitchen</div>
+        <h2 id="menu-title">A menu worth<br>staying for.</h2>
+        <p>Seasonal ingredients, familiar comfort, and a few delicious surprises.</p>
+      </div>
+      <div class="menu-layout">
+        <div class="menu-photo">
+          <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Cosy cafe interior with wooden tables" loading="lazy">
+          <span>Take your time.</span>
+        </div>
+        <div class="menu-list">
+          <div class="menu-group">
+            <h3>Coffee &amp; tea <span>01</span></h3>
+            <div class="menu-item"><div><strong>Ember Espresso</strong><small>Rich, dark chocolate, house blend</small></div><b>₹140</b></div>
+            <div class="menu-item"><div><strong>Honey Oat Latte</strong><small>Double shot, oat milk, wild honey</small></div><b>₹220</b></div>
+            <div class="menu-item"><div><strong>Cardamom Cold Brew</strong><small>Slow steeped, lightly spiced</small></div><b>₹190</b></div>
+          </div>
+          <div class="menu-group">
+            <h3>From the kitchen <span>02</span></h3>
+            <div class="menu-item"><div><strong>Chilli Cheese Toast</strong><small>Sourdough, three cheeses, green chilli</small></div><b>₹260</b></div>
+            <div class="menu-item"><div><strong>Garden Grain Bowl</strong><small>Seasonal vegetables, herbs, lemon tahini</small></div><b>₹340</b></div>
+            <div class="menu-item"><div><strong>Ember Chocolate Cake</strong><small>Warm chocolate, sea salt, cream</small></div><b>₹240</b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reserve-section" id="reserve" aria-labelledby="reserve-title">
+      <div class="reserve-intro">
+        <div class="section-label">03 / Your table</div>
+        <h2 id="reserve-title">Save a seat<br>for yourself.</h2>
+        <p>Whether it’s a quiet coffee or a table full of friends, we’ll have the kettle on.</p>
+        <div class="details"><span>23 Green Park Lane<br>Bengaluru, Karnataka</span><span>+91 98765 43210<br>hello@mossandember.in</span></div>
+      </div>
+      <form class="booking-form" id="booking-form">
+        <div class="form-heading"><span>Reserve a table</span><small>We’ll hold it for 15 minutes</small></div>
+        <label for="guest-name">Your name</label>
+        <input id="guest-name" name="name" type="text" placeholder="e.g. Darshan Guttedar" required>
+        <div class="form-row">
+          <div><label for="booking-date">Date</label><input id="booking-date" name="date" type="date" required></div>
+          <div><label for="booking-time">Time</label><select id="booking-time" name="time" required><option value="">Select time</option><option>08:00 AM</option><option>10:00 AM</option><option>12:00 PM</option><option>02:00 PM</option><option>05:00 PM</option><option>07:00 PM</option><option>09:00 PM</option></select></div>
+        </div>
+        <div class="form-row">
+          <div><label for="guest-count">Guests</label><select id="guest-count" name="guests" required><option value="">How many?</option><option>1 guest</option><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5+ guests</option></select></div>
+          <div><label for="occasion">Occasion</label><select id="occasion" name="occasion"><option>Just coffee</option><option>Casual meal</option><option>Celebration</option><option>Work catch-up</option></select></div>
+        </div>
+        <button type="submit" class="submit-button">Request my table <span aria-hidden="true">↗</span></button>
+        <p class="form-note">Your request is confirmed instantly for this demo.</p>
+        <p class="confirmation" id="confirmation" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#top"><span class="brand-mark">✳</span> moss &amp; ember</a>
+    <span>Good things take time.</span>
+    <span>© 2026 Moss &amp; Ember</span>
+  </footer>
+
+  <script>
+    const bookingForm = document.querySelector('#booking-form');
+    const bookingDate = document.querySelector('#booking-date');
+    const confirmation = document.querySelector('#confirmation');
+    bookingDate.min = new Date().toISOString().split('T')[0];
+
+    bookingForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const formData = new FormData(bookingForm);
+      const name = formData.get('name');
+      const guests = formData.get('guests');
+      const time = formData.get('time');
+      confirmation.textContent = `Thanks, ${name}. Your table request for ${guests} at ${time} is confirmed.`;
+      bookingForm.reset();
+    });
+  </script>
+</body>
+</html>
